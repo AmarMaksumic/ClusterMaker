@@ -1,9 +1,13 @@
 const fileSelector = document.getElementById('csv-input');
-  
-fileSelector.addEventListener('change', (event) => {
-  const fileList = event.target.files;
-  console.log(fileList);
-});
+
+if (fileSelector){
+  fileSelector.addEventListener('change', (event) => {
+    const files = (<HTMLInputElement>event.target).files;
+    if(files){
+      readCSV(files[0])
+    } 
+  });
+} 
 
 
 

@@ -8,7 +8,8 @@
       "moduleResolution": "node", // Tell tsc to look in node_modules for modules
       "sourceMap": true,          // Creates *.js.map files
       "strict": true,             // Strict types, eg. prohibits `var x=0; x=null`
-      "alwaysStrict": true        // Enable JavaScript's "use strict" mode
+      "alwaysStrict": true,        // Enable JavaScript's "use strict" mode
+      "types": ["google.maps"]
     },
     "include": ["**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]

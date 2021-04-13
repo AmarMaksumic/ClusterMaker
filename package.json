@@ -20,11 +20,13 @@
   },
   "homepage": "https://github.com/AmarMaksumic/ClusterMaker#readme",
   "devDependencies": {
+    "@types/google.maps": "^3.44.3",
     "awesome-typescript-loader": "^5.2.1",
     "concurrently": "^6.0.2",
     "http-server": "^0.12.3"
   },
   "dependencies": {
+    "google-maps": "^4.3.3",
     "typescript": "^4.2.4"
   }
 }

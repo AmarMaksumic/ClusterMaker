@@ -3,13 +3,21 @@
     // compiler (tsc) and makes VSCode recognize this folder as a TS project,
     // enabling the VSCode build tasks "tsc: build" and "tsc: watch".
     "compilerOptions": {
-      "target": "es5",            // Compatible with older browsers
-      "module": "umd",            // Compatible with both Node.js and browser
+      "target": "esnext",            // Compatible with older browsers
+      "module": "esnext",            // Compatible with both Node.js and browser
       "moduleResolution": "node", // Tell tsc to look in node_modules for modules
       "sourceMap": true,          // Creates *.js.map files
       "strict": true,             // Strict types, eg. prohibits `var x=0; x=null`
       "alwaysStrict": true,        // Enable JavaScript's "use strict" mode
-      "types": ["google.maps"]
+      "noImplicitAny": false,
+      "allowJs": true,
+      "checkJs": false,
+      "pretty": true,
+      "esModuleInterop": true,
+      "lib": ["esnext", "es6", "dom", "dom.iterable"],
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true
+      
     },
     "include": ["**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
